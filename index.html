@@ -49,7 +49,7 @@
 			<header id="header">
 				
 				<div class="inner">
-					<div class="flex-item image left fit-logo">
+					<div class="image left fit-logo">
 							<img src="images/Digital Reserve Stack.png" alt="" />
 					</div>
 					<!--- <a href="index.html" class="logo">Digital Reserve</a> -->
@@ -61,6 +61,7 @@
 							<li><a href="https://www.facebook.com/digitalreserve/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 							<li><a href="https://twitter.com/DigitalReserve" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://riot.im/app/#/room/#thedigitalreserve-dev:matrix.org" class="icon fa-users"><span class="label">Riot Chat</span></a></li>
 						</ul>
 					
 					</nav>
@@ -88,7 +89,7 @@
 					</div>
 					</br>
 					<ul class="actions">
-						<li><a href="#" class="button special big">Join the Network</a></li>
+						<li><a href="#" class="popup button special big" id="joinbutton" onclick="myFunction()">Join the Network </a> <span class="popuptext ctct-inline-form" id="myPopup" data-form-id="e3086c2c-12ec-4d70-84eb-b39f7f494299"></span></li>
 					</ul>
 				</div>						
 			</section>
@@ -116,7 +117,7 @@
 						</article>
 						<article>
 							<header>
-								<h3>Foward-thinking Finance.</h3>
+								<h3>Forward-thinking Finance.</h3>
 							</header>
 							<p> The DRN aims to make scalable and sustainable microfinancing available to all with its identity-secured lending protocols. The Denarii Protocol leverages pooled Minting transaction fees to activate new capital, allowing money to flow in an open and inclusive manner while earning interest for the Minters securing the network. </p>
 							<footer>
@@ -269,6 +270,25 @@
 			<script src="assets/js/particles.js"></script>
 			<script src="assets/js/app.js"></script>
 
+			<script>
+			// When the user clicks on <div>, open the popup
+			function myFunction() {
+				var popup = document.getElementById("myPopup");
+				popup.classList.toggle("show");
+				var x = document.getElementById("joinbutton");
+					if (x.style.display === "none") {
+						x.style.display = "block";
+					} else {
+						x.style.display = "none";
+					}
+			}
+				
+			</script>
+			
+		<!-- Begin Constant Contact Active Forms -->
+		<script> var _ctct_m = "cdeb2f737ff4c4da00e2dacebf5852a6"; </script>
+		<script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
+		<!-- End Constant Contact Active Forms -->	
 			
 		<!-- Start of HubSpot Embed Code -->
 			<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4102485.js"></script>
